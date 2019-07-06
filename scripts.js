@@ -13,7 +13,7 @@
   let titleInterval = null;
 
   function init() {
-    document.addEventListener('gesturestart', function (e) {
+    window.addEventListener('gesturestart', function (e) {
       e.preventDefault();
     });
 
