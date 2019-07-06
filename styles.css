@@ -57,7 +57,7 @@ body {
 }
 
 .info-container__content {
-  height: 30%;
+  height: auto;
   width: 100%;
   max-width: 500px;
   overflow: visible;
