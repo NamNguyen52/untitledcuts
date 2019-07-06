@@ -8,7 +8,9 @@
     'la_arts_district',
     'venice_skate',
     'md_crowd',
-    'la_griffith_night'
+    'la_griffith_night',
+    'hollywood_roosevelt',
+    'md_stage'
   ];
   let titleInterval = null;
 
