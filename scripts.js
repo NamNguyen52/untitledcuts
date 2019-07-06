@@ -37,7 +37,7 @@
       imgNames.push(imgName);
       intervalCount += 1;
 
-      if (intervalCount > 4) {
+      if (intervalCount > 6) {
         alphaValue += 0.1;
 
         if (alphaValue > 1) {
@@ -47,7 +47,7 @@
       }
 
       styleEl.innerHTML = titleStyles(imgName, alphaValue);
-    }, 125);
+    }, 120);
   }
 
   function titleStyles(imgName, alphaValue) {
