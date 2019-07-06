@@ -37,7 +37,7 @@
       imgNames.push(imgName);
       intervalCount += 1;
 
-      if (intervalCount > 6) {
+      if (intervalCount > 12) {
         alphaValue += 0.1;
 
         if (alphaValue > 1) {
@@ -52,6 +52,13 @@
 
   function titleStyles(imgName, alphaValue) {
     return `
+      .title-container__background {
+        background: url('/assets/images/${imgName}.jpg') no-repeat 0 0;
+        background-position: center;
+        background-size: cover;
+        opacity: ${1 - (alphaValue + 0.6)}
+      }
+
       .title-container__title {
         background: url('/assets/images/${imgName}.jpg') no-repeat 0 0;
         -webkit-background-clip: text;
