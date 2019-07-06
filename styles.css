@@ -1,0 +1,95 @@
+body {
+  /* background-color: #0A0A09; */
+  background-color: #080807;
+  font-family: 'Overpass', sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: calc(8px + (26 - 8) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-container.main-container--show {
+  opacity: 1;
+}
+
+.title-container,
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  flex-grow: 1;
+}
+
+.title-container__title {
+  /* color: #F6E7D6; */
+  font-size: 5em;
+  background: url('/assets/images/venice_sideshow.jpg') no-repeat 0 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(237,221,198,0);
+  color: #EDDDC6;
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.info-container {
+  height: 0vh;
+  transition: all 0.75s ease-in-out;
+}
+
+.info-container.info-container__expanded {
+  flex-grow: 1;
+  max-height: 50%;
+  background-color: #EDDDC6;
+}
+
+.info-container__content {
+  height: 30%;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.bio {
+  color: #080807;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+.social {
+  margin-top: 1.8em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.social .fab {
+  font-size: 2em;
+  color: #080807;
+}
+
+.social > .social__insta {
+  margin-right: .5em;
+}
+
+.social > .social__youtube {
+  margin-left: .5em;
+}
+
+.social > a:hover {
+  cursor: pointer;
+}
