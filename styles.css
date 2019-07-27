@@ -44,6 +44,7 @@ body {
   color: #EDDDC6;
   position: absolute;
   transition: all 1s ease-in-out;
+  background-size: cover;
 }
 
 .title-container__background {
