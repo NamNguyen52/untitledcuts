@@ -66,6 +66,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: rgba(237,221,198,${alphaValue});
         color: #EDDDC6;
+        background-size: cover;
       }
     `;
   }
